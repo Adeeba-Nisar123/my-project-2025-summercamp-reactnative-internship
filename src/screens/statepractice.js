@@ -30,6 +30,9 @@ export default function StatePractice() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1, // Take up full screen
+    justifyContent: "center", // Center vertically
+    alignItems: "center", // Center horizontally
     padding: 20,
   },
   input: {
@@ -38,5 +41,6 @@ const styles = StyleSheet.create({
     padding: 10,
     marginVertical: 5,
     borderRadius: 5,
+    width: "80%", // Make inputs not too wide
   }
 });
