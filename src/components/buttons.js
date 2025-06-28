@@ -1,8 +1,9 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 
-export default function Button({ onPress, title }) {
+function Button({ onPress, title, btnIcon }) {
   return (
     <TouchableOpacity onPress={onPress} style={styles.buttonCon}>
+      {btnIcon}
       <Text style={styles.buttonText}>{title}</Text>
     </TouchableOpacity>
   );
@@ -21,3 +22,5 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
 });
+
+export { Button };

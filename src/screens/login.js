@@ -9,27 +9,27 @@ export default function App() {
       <TextInput
         style={styles.input}
         placeholder="Enter your username"
-        placeholderTextColor="#bbb"
+        placeholderTextColor="#ccc"
       />
 
       <TextInput
         style={styles.input}
         placeholder="Enter your email"
-        placeholderTextColor="#bbb"
+        placeholderTextColor="#ccc"
         keyboardType="email-address"
       />
 
       <TextInput
         style={styles.input}
         placeholder="Enter your password"
-        placeholderTextColor="#bbb"
+        placeholderTextColor="#ccc"
         secureTextEntry={true}
       />
 
       <View style={styles.buttonContainer}>
         <Button
           title="Login"
-          color="#4CAF50"
+          color="#FF6B6B"
           onPress={() => alert("Login button pressed")}
         />
       </View>
@@ -42,28 +42,36 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#1E1E2F', // Dark bluish background
+    backgroundColor: '#0F2027', // Deep bluish gradient tone
   },
   title: {
     fontSize: 36,
     fontWeight: 'bold',
     marginBottom: 40,
     textAlign: 'center',
-    color: '#F5F5F5', // Light text for dark background
+    color: '#ffffff',
+    textShadowColor: '#FF6B6B',
+    textShadowOffset: { width: 1, height: 1 },
+    textShadowRadius: 10,
   },
   input: {
     height: 50,
-    borderColor: '#555',
+    borderColor: '#444',
     borderWidth: 1,
     marginBottom: 20,
     paddingHorizontal: 15,
-    backgroundColor: '#2D2D3A', // Slightly lighter than background
-    borderRadius: 10,
+    backgroundColor: '#1C1C2A', // Slightly rich contrast
+    borderRadius: 12,
     color: '#fff',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
   },
   buttonContainer: {
     marginTop: 10,
-    borderRadius: 10,
+    borderRadius: 12,
     overflow: 'hidden',
   },
 });
