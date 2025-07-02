@@ -1,6 +1,6 @@
-import StatePractice from "./src/screens/statepractice";
-
+import React from "react";
+import WhatsappStatus from "./src/screens/whatsappStatus/whatsappStatus";
 
 export default function App() {
-  return <StatePractice />;
+  return <WhatsappStatus />;
 }
